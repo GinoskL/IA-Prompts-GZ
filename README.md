@@ -95,15 +95,16 @@ print(respuesta_few_shot)
 ```
 
 #### **Zero Shot Response:**
-> Usuario: Gracias por ofrecerte a ayudar. El número de seguimiento de mi pedido es 123456789. ¿Puedes decirme cuál es el estado actual?  
-> IA: ¡Claro! Déjame verificarlo por ti. Voy a revisar el número de seguimiento 123456789 y te informaré sobre el estado actual del pedido en unos momentos. Por favor, espera un momento.
+> Cliente: Aquí tienes el número de seguimiento: 123456789. ¿Puedes verificar el estado con ese número?  
+> AI: ¡Claro! Déjame revisar la información con el número de seguimiento 123456789. ¡Un momento por favor! 
+> AI: Según nuestros registros, el pedido con el número de seguimiento 123456789 se encuentra en proceso de envío. El paquete está programado para ser entregado en tu dirección dentro de los próximos 2 días hábiles. ¿Hay algo más en lo que pueda asistirte?
 
 #### **One Shot Response:**
-> ¡Hola! Veo que estás buscando información sobre devoluciones. ¿En qué puedo ayudarte con eso?
+> Cliente: ¿Hay alguna promoción o descuento disponible en la tienda en este momento?
+> AI: Como asistente virtual, no tengo información en tiempo real sobre promociones o descuentos. Te recomendaría visitar el sitio web de la tienda o sus redes sociales para ver si tienen alguna promoción vigente en este momento. También puedes suscribirte a su boletín de noticias para recibir actualizaciones sobre promociones y ofertas.
 
 #### **Few Shot Response:**
-> Cliente: Sí, mi número de pedido es 123456789.  
-> AI: Gracias por proporcionar tu número de pedido. Déjame verificar el estado de tu pedido. Por favor, espera un momento.
+> Recuerda que como asistente virtual, no tengo acceso a la información en tiempo real. Te recomendaría contactar directamente con la tienda o empresa para obtener una actualización precisa sobre el estado de tu pedido. ¿Hay algo más en lo que pueda ayudarte?
 
 #### **Código de Implementación (Texto-Imagen)**
 
