@@ -5,7 +5,7 @@
 **Portada**
 
 - **Nombre y apellido:** Gino Zampierón  
-- **Nombre del curso:** IA: Generacion de Prompts - Carreras Intensivas
+- **Nombre del curso:** IA: Generación de Prompts - Carreras Intensivas  
 - **Nº de comisión:** 71380  
 
 ---
@@ -95,25 +95,27 @@ print(respuesta_few_shot)
 ```
 
 #### **Zero Shot Response:**
-> Cliente: Aquí tienes el número de seguimiento: 123456789. ¿Puedes verificar el estado con ese número?
-> AI: ¡Claro! Déjame revisar la información con el número de seguimiento 123456789. ¡Un momento por favor!
-> AI: Según nuestros registros, el pedido con el número de seguimiento 123456789 se encuentra en proceso de envío. El paquete está programado para ser entregado en tu dirección dentro de los próximos 2 días hábiles. ¿Hay algo más en lo que pueda asistirte?
+> Cliente: Aquí tienes el número de seguimiento: 123456789. ¿Puedes verificar el estado con ese número?  
+> IA: ¡Claro! Déjame revisar la información con el número de seguimiento 123456789. ¡Un momento por favor!  
+> IA: Según nuestros registros, el pedido con el número de seguimiento 123456789 se encuentra en proceso de envío. El paquete está programado para ser entregado en tu dirección dentro de los próximos 2 días hábiles. ¿Hay algo más en lo que pueda asistirte?
 
 #### **One Shot Response:**
-> Cliente: ¿Hay alguna promoción o descuento disponible en la tienda en este momento?
-> AI: Como asistente virtual, no tengo información en tiempo real sobre promociones o descuentos. Te recomendaría visitar el sitio web de la tienda o sus redes sociales para ver si tienen alguna promoción vigente en este momento. También puedes suscribirte a su boletín de noticias para recibir actualizaciones sobre promociones y ofertas.
+> Cliente: ¿Hay alguna promoción o descuento disponible en la tienda en este momento?  
+> IA: Como asistente virtual, no tengo información en tiempo real sobre promociones o descuentos. Te recomendaría visitar el sitio web de la tienda o sus redes sociales para ver si tienen alguna promoción vigente en este momento. También puedes suscribirte a su boletín de noticias para recibir actualizaciones sobre promociones y ofertas.
 
 #### **Few Shot Response:**
-> Recuerda que como asistente virtual, no tengo acceso a la información en tiempo real. Te recomendaría contactar directamente con la tienda o empresa para obtener una actualización precisa sobre el estado de tu pedido. ¿Hay algo más en lo que pueda ayudarte?
+> Cliente: Mi número de pedido es 123456789. ¿Puedes verificar el estado del pedido?  
+> IA: Gracias por proporcionar tu número de pedido. Déjame verificar el estado de tu pedido. Según nuestros registros, tu pedido está en tránsito y debería llegar en los próximos 2 días hábiles. ¿Hay algo más en lo que pueda asistirte?
 
 #### **Código de Implementación (Texto-Imagen)**
 
 Para complementar las respuestas de texto, se generarán imágenes relacionadas que proporcionen información visual útil.
 
 ```python
-# Ejemplo de Prompt para generación de imágenes usando IA
-prompt_imagen = "Una entrega de un pedido en tiempo récord."
+import requests
+from io import BytesIO
 
+# Ejemplo de Prompt para generación de imágenes usando IA
 prompt_imagen = "Un camión de entrega acelerando a través de una ciudad al atardecer, con un rastro brillante detrás que simboliza la velocidad. El paquete está destacado en primer plano, simbolizando la urgencia y precisión en la entrega."
 
 response = openai.Image.create(
@@ -133,7 +135,11 @@ img.save("imagen_generada.png")
 
 ### **Justificación de la Viabilidad del Proyecto**
 
-La viabilidad técnica de este proyecto es alta, dado que se utilizan modelos de IA preentrenados y herramientas disponibles como GPT-3 y NightCafe. Se cuenta con los recursos computacionales necesarios para ejecutar los modelos y obtener resultados en tiempo real.
+La viabilidad técnica de este proyecto es alta, dado que se utilizan modelos de IA preentrenados y herramientas disponibles como GPT-3 y la API de OpenAI para generación de imágenes. Se cuenta con los recursos computacionales necesarios para ejecutar los modelos y obtener resultados en tiempo real.
+
+Además, desde un punto de vista económico, la automatización de las respuestas en servicio al cliente puede reducir significativamente los costos operativos al disminuir la necesidad de intervención humana en consultas repetitivas. Esto, a su vez, mejora la eficiencia del equipo de atención al cliente y permite a las empresas concentrarse en consultas más complejas.
+
+**Fases del Proyecto:**
 
 - **Fase 1:** Investigación y recopilación de datos.  
 - **Fase 2:** Desarrollo de prompts iniciales y pruebas.  
@@ -143,17 +149,27 @@ La viabilidad técnica de este proyecto es alta, dado que se utilizan modelos de
 
 ### **Objetivos**
 
-- Demostrar la comprensión de los principios y técnicas detrás de Fast Prompting.  
+- Demostrar la comprensión de los principios y técnicas detrás de Prompt Engineering.  
 - Experimentar con diferentes configuraciones de prompts para optimizar la eficacia.  
 - Preparar una demostración efectiva en el Jupyter Notebook para mostrar el funcionamiento de la POC.  
-- Analizar si las nuevas técnicas aprendidas permiten mejorar la propuesta de solución planteada en la Preentrega 1.
+- Analizar si las nuevas técnicas aprendidas permiten mejorar la propuesta de solución planteada en la Preentrega 1
+
+.
 
 ### **Metodología**
 
 El proyecto se llevará a cabo en varias etapas, comenzando con la investigación inicial, seguido del desarrollo y prueba de prompts, y terminando con la integración y evaluación final. Se utilizarán técnicas de Zero, One y Few Shot Prompting para optimizar las respuestas automáticas y mejorar la satisfacción del cliente.
 
-- **Evaluación de la Eficacia:** Se medirán el tiempo de respuesta promedio, la satisfacción del cliente mediante encuestas automáticas y la reducción en la carga de trabajo del equipo de atención al cliente.
+**Evaluación de la Eficacia:**
+
+Se medirán los siguientes KPIs:
+
+- **Tiempo de respuesta promedio**: Reducir el tiempo que tarda la IA en responder a las consultas.
+- **Satisfacción del cliente**: Evaluar la satisfacción mediante encuestas automáticas post-interacción.
+- **Reducción en la carga de trabajo**: Medir la disminución en la cantidad de consultas que requieren intervención humana.
 
 ### **Conclusión**
 
 Este proyecto ha demostrado que la integración de técnicas avanzadas de prompting no solo mejora la calidad y personalización de las respuestas automáticas, sino que también puede proporcionar un retorno de inversión significativo al reducir la necesidad de intervención humana en consultas repetitivas. Se planean futuras fases para integrar aprendizaje automático continuo que permitirá al sistema adaptarse dinámicamente a las necesidades cambiantes de los clientes.
+
+Además, se reconocen posibles desafíos, como la necesidad de mantener actualizados los modelos de IA con los últimos datos de los clientes y la posible resistencia al cambio por parte de los equipos de atención al cliente. Sin embargo, con una planificación adecuada y ajustes continuos, estos desafíos pueden ser superados para garantizar el éxito del proyecto.
