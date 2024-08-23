@@ -4,8 +4,8 @@
 
 **Portada**
 
-- **Nombre y apellido del autor:** Gino Zampierón  
-- **Nombre del curso:** Prompt Engineering  
+- **Nombre y apellido:** Gino Zampierón  
+- **Nombre del curso:** IA: Generacion de Prompts - Carreras Intensivas
 - **Nº de comisión:** 71380  
 
 ---
