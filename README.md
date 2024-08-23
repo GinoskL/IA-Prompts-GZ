@@ -95,8 +95,8 @@ print(respuesta_few_shot)
 ```
 
 #### **Zero Shot Response:**
-> Cliente: Aquí tienes el número de seguimiento: 123456789. ¿Puedes verificar el estado con ese número?  
-> AI: ¡Claro! Déjame revisar la información con el número de seguimiento 123456789. ¡Un momento por favor! 
+> Cliente: Aquí tienes el número de seguimiento: 123456789. ¿Puedes verificar el estado con ese número?
+> AI: ¡Claro! Déjame revisar la información con el número de seguimiento 123456789. ¡Un momento por favor!
 > AI: Según nuestros registros, el pedido con el número de seguimiento 123456789 se encuentra en proceso de envío. El paquete está programado para ser entregado en tu dirección dentro de los próximos 2 días hábiles. ¿Hay algo más en lo que pueda asistirte?
 
 #### **One Shot Response:**
